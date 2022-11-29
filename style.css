@@ -25,8 +25,11 @@
     color: #f1f1f1;
 }
 
-.sidebaropendiv {
-    width: 20px;
+#sideNavHover {
+    visibility: visible;
+    color: #f1f1f1;
+    background-color: #111;
+    width: 10px;
     position: fixed;
     left: 0;
     top: 0;
@@ -42,12 +45,10 @@
     margin-left: 50px;
 }
 
-
 main {
     transition: margin-left .5s;
     padding: 20px;
 }
-
 
 @media screen and (max-height: 450px) {
     .sidenav {
