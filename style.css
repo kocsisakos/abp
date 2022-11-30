@@ -2,6 +2,29 @@
     display: block !important;
 }
 
+@keyframes rotate180 {
+    from {transform: rotate(0);}
+    to {transform: rotate(180deg);}
+}
+
+@keyframes normal {
+    from {transform: rotate(180deg);}
+    to {transform: rotate(0);}
+}
+
+.rotate {
+    animation-name: rotate180;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.normal {
+    animation-name: normal;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+    rotate: 180;
+}
+
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #333;
@@ -142,3 +165,4 @@
         text-align: left;
     }
 }
+
