@@ -1,30 +1,44 @@
 <!DOCTYPE html>
 <html lang="hu">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ABP főoldal</title>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABP főoldal</title>
 
-        <!-- favicon -->
-        <!-- <link rel="icon" href=""> -->
-        <link rel="stylesheet" href="style.css">
-        <script src="a.js"></script>
-    </head>
+    <!-- favicon -->
+    <!-- <link rel="icon" href=""> -->
+    <link rel="stylesheet" href="style.css">
+    <script src="a.js"></script>
+</head>
 
-    <body>
+<body>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div class="dropdown">
+            <p class="dropbtn" id="dropBtn">Jatekok<img onclick="openDrop()" id="dropbtnbtn" src="images/akos/index/arrow.png" alt="Balfasz a js dev"></button>
+            <div id="dropdown-content" class="hide">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+        </div>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+    </div>
+
+    <main id="content">
 
 
-        <main id="content">
+    </main>
 
+    <footer id="footer">
 
-        </main>
+    </footer>
 
-        <footer id="footer">
-
-        </footer>
-
-    </body>
+</body>
 
 </html>
