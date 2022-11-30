@@ -1,5 +1,7 @@
 keresés: #316282
 nagyito: #549bc6
-betu: #66c0f4
+betu kek: #66c0f4
+betu feher: #c6d4df
 hatter: #1b2838
 rightcol hatterszin: #131a24
+navbar: #28528e
