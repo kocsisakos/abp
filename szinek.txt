@@ -1,0 +1,5 @@
+keresés: #316282
+nagyito: #549bc6
+betu: #66c0f4
+hatter: #1b2838
+rightcol hatterszin: #131a24
