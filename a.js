@@ -1,30 +1,27 @@
-/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
 function responsive() {
-  var x = document.getElementById("topnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+  var nav = document.getElementById("topnav");
+  if (nav.className === "topnav") {
+    nav.className += " responsive";
   } else {
-    x.className = "topnav";
-}
-}
-
-function openDrop() {
-  var y = document.getElementById("dropdown-content")
-  var z = document.getElementById("dropbtnbtn")
-  if (y.className === "hide") {
-    y.className += " show";
-  } else {
-    y.className = "hide";
-  }
-  
-  if (z.className === "normal") {
-    z.className = "rotate";
-  } else {
-    z.className = "normal";
+    nav.className = "topnav";
   }
 }
 
-// function rotate() {
+function toggleDrop() {
+  var content = document.getElementById("dropdown-content");
+  var btn = document.getElementById("dropbtnbtn");
+
+  if (content.className === "hide") {
+    content.className += " show";
+  } else {
+    content.className = "hide";
+  }
   
-//   if (z.classname === "normal")
-// }
+  if (btn.className === "normal") {
+    btn.className = "rotate";
+    btn.src = "arrow.png";
+  } else {
+    btn.className = "normal";
+    btn.src = "x.png";
+  }
+}
