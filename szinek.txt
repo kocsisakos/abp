@@ -5,3 +5,4 @@ betu feher: #c6d4df
 hatter: #1b2838
 rightcol hatterszin: #131a24
 navbar: #28528e
+csik: #3a6e8b
