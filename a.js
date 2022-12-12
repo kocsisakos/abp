@@ -19,9 +19,7 @@ function toggleDrop() {
   
   if (btn.className === "normal") {
     btn.className = "rotate";
-    btn.src = "arrow.png";
   } else {
     btn.className = "normal";
-    btn.src = "x.png";
   }
 }
