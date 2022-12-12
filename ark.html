@@ -6,91 +6,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ARK: Survival Evolved</title>
     <link rel="stylesheet" href="style.css">
+    <script src="a.js"></script>
     <style>
-        h1{
-            font-size: 20pt;
-            text-shadow: 3px black;
-        }
         body {
-            margin-left: 500px;
-            margin-right: 500px;
-            background-image: url(images/balint/arkhatterblur.png);
+            background-image: url(images/balint/arkhatter.png);
             background-repeat: no-repeat;
-            color: aliceblue;
-            background-size: cover;
+            background-size: 150%;
         }
-        div {
-            box-shadow: black;
-        }
-    .rightcol {
-        float: right;
-    }
-  
-  
-  
-
-
-
-/* Position text in the middle of the page/image */
-.header {
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-  color: white;
-  font-weight: bold;
-  border: 3px solid #f1f1f1;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 55%;
-  padding: 5px;
-  text-align: left;
-}
-a {
-    color: #66c0f4;
-    text-decoration: none;
-}
-.rightcol img {
-    height: 151px;
-    width: 324px;
-}
-.rightcol {
-    float: right;
-}
-.leftcol {
-    float: left;
-}
     </style>
 </head>
-<body>
-
-
-  
-    <div class="header">
-        <h1>ARK: Survival Evolved</h1>
-        <div class="leftcol">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/5fIAPcVdZO8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-            <div class="rightcol">
-                <img src="images/balint/ark.png" alt="header?">
-                <div class="snippet"><br>
-                    Stranded on the shores of a mysterious island, you must <br> learn to survive. 
-                    Use skill & cunning to kill, tame,<br> breed, & ride the Dinosaurs. 
-                     Developed by Studio Wildcard,<br> Instinct Games 
-                     
-                 </div>
-                 <div class="about"> <br>
-
-                    Last ratings: <a target="_blank" href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/#app_reviews_hash">Very positive</a> <br>
-                    All ratings: <a target="_blank" href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/#app_reviews_hash">Very positive</a> <br>
-                    <br>
-                    Megjelenés dátuma: 2017. aug. 27.
-                    <a target="_blank" href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">forrás</a>
-                 </div>
+<body class="arkbg">
+    <div class="topnav" id="topnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <div class="dropdown">
+            <p class="dropbtn" id="dropBtn">Jatekok<img class="rotate" onclick="toggleDrop()" id="dropbtnbtn" src="arrow.png" alt="Balfasz a js dev"></button>
+            <div id="dropdown-content" class="hide">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
             </div>
-           
+        </div>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="responsive()">&#9776;</a>
     </div>
-
+    <div class="main">
+        <div class="header">
+            <h1>ARK: Survival Evolved</h1>
+            <div class="leftcol">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/5fIAPcVdZO8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+                <div class="rightcol">
+                    <img src="images/balint/ark.png" alt="header?">
+                    <div class="snippet"><br>
+                        Stranded on the shores of a mysterious island, you <br>
+                        must learn to survive. Use skill & cunning to kill,<br> tame,
+                        breed, & ride the Dinosaurs.Developed by<br> 
+                        Studio Wildcard, Instinct Games
+        
+                    </div>
+                    <div class="about"> <br>
+                        Last ratings: <a target="_blank" href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/#app_reviews_hash">Very positive</a> <br>
+                        All ratings: <a target="_blank" href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/#app_reviews_hash">Very positive</a> <br>
+                        <br>
+                        Date of release: 2017. aug. 27.
+                        <a target="_blank" href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">forrás</a>
+                    </div>
+                </div>
+        
+        </div>
+        <div class="below">
+            <h1>About the game</h1>
+            <hr>
+            <div class="coloumn">
+                Use your cunning and resources to kill or tame & breed the leviathan dinosaurs and other primeval creatures roaming the land, and team up with or prey on hundreds of other players to survive, dominate... and escape! <br>
+                <hr>
+                <img class="kepkozep" src="images/balint/TameTrainBreedRide.png" alt="gif"> <br>
+                <hr>
+                Dinosaurs, Creatures, & Breeding! -- over 100+ creatures can be tamed using a challenging capture-&-affinity process, involving weakening a feral creature to knock it unconscious, and then nursing it back to health with appropriate food. Once tamed, you can issue commands to your tames, which it may follow depending on how well you’ve tamed and trained it. Tames, which can continue to level-up and consume food, can also carry Inventory and Equipment such as Armor, carry prey back to your settlement depending on their strength, and larger tames can be ridden and directly controlled! <br>
+                <hr>
+                <img class="kepkozep" src="images/balint/FoodWaterTemp.png" alt="gif2">
+            </div>
+        </div>
+    </div>
 </body>
 </html>
