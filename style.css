@@ -78,7 +78,7 @@
     
 }
 
-#dropdown-content {
+#dropdown-content1, #dropdown-content2 {
     position: fixed;
     margin-top: -2px;
     background-color: #28528e;
@@ -91,7 +91,7 @@
     display: none;
 }
 
-#dropdown-content a {
+#dropdown-content1 a, #dropdown-content2 a {
     float: none;
     color: white;
     padding: 12px 16px;
@@ -112,7 +112,7 @@
 }
 
 
-#dropbtnbtn {
+#dropbtnbtn1, #dropbtnbtn2 {
     height: 15px;
     background-color: #28528e;
     border-radius: 50%;

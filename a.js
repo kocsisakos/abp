@@ -1,15 +1,23 @@
-function responsive() {
-  var nav = document.getElementById("topnav");
-  if (nav.className === "topnav") {
-    nav.className += " responsive";
+function toggleDrop1() {
+  var content = document.getElementById("dropdown-content1");
+  var btn = document.getElementById("dropbtnbtn1");
+
+  if (content.className === "hide") {
+    content.className += " show";
   } else {
-    nav.className = "topnav";
+    content.className = "hide";
+  }
+  
+  if (btn.className === "normal") {
+    btn.className = "rotate";
+  } else {
+    btn.className = "normal";
   }
 }
 
-function toggleDrop() {
-  var content = document.getElementById("dropdown-content");
-  var btn = document.getElementById("dropbtnbtn");
+function toggleDrop2() {
+  var content = document.getElementById("dropdown-content2");
+  var btn = document.getElementById("dropbtnbtn2");
 
   if (content.className === "hide") {
     content.className += " show";
