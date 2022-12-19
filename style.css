@@ -251,6 +251,11 @@ a {
     top: 0;
 }
 
+.row {
+    display: flex;
+    gap: 5px;
+}
+
 .row:after {
     content: "";
     display: table;
@@ -260,6 +265,11 @@ a {
 .column {
     float: left;
     width: 16.66%;
+}
+
+.activeimg {
+    /* Fixelni az offset issue-t */
+    background-image: url(images/game_highlight_activethumb.png); 
 }
 
 .demo {
