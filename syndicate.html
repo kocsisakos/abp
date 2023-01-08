@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="hu">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,11 +16,13 @@
         }
     </style>
 </head>
+
 <body class="arkbg">
     <div class="topnav" id="topnav">
         <a href="index.html">Főoldal</a>
         <div class="dropdown">
-            <p class="dropbtn" id="dropBtn1">Action - Shooter<img class="rotate" onclick="toggleDrop1()" id="dropbtnbtn1" src="arrow.png" alt="Balfasz a js dev"></button>
+            <p class="dropbtn" id="dropBtn1">Action - Shooter<img class="rotate" onclick="toggleDrop1()"
+                    id="dropbtnbtn1" src="arrow.png" alt="Balfasz a js dev"></button>
             <div id="dropdown-content1" class="hide">
                 <a href="r6.html">R6</a>
                 <a href="mw2.html">MW2</a>
@@ -28,7 +31,8 @@
             </div>
         </div>
         <div class="dropdown">
-            <p class="dropbtn" id="dropBtn2">Survival<img class="rotate" onclick="toggleDrop2()" id="dropbtnbtn2" src="arrow.png" alt="Balfasz a js dev"></button>
+            <p class="dropbtn" id="dropBtn2">Survival<img class="rotate" onclick="toggleDrop2()" id="dropbtnbtn2"
+                    src="arrow.png" alt="Balfasz a js dev"></button>
             <div id="dropdown-content2" class="hide">
                 <a href="unturned.html">Unturned</a>
                 <a href="subnautica.html">Subnautica</a>
@@ -39,45 +43,117 @@
     <div class="main">
         <div class="header">
             <h1>ARK: Survival Evolved</h1>
-        </div> 
-            <div class="card">
-                <div class="leftcol">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/5fIAPcVdZO8?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card">
+            <div class="container">
+                <div class="Slides" style="display: block;">
+                    <div class="numbertext">1 / 6</div>
+                    <video id="autoplayvid" width="100%" height="auto" autoplay muted controls loop>
+                        <source src="images/balint/acvideo.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
-                <div class="vflex">
-                <div class="rightcol">
-                            <img src="images/balint/ark.png" alt="header?">
-                    <div class="snippet">
-                                <p>
-                                    Stranded on the shores of a mysterious island, you
-                                    must learn to survive. Use skill & cunning to kill,
-                                    breed, & ride the Dinosaurs.Developed by
-                                    Studio Wildcard, Instinct Games
-                                </p>
+
+                <div class="Slides">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="images/balint/acnagy1.png" style="width:100%">
+                </div>
+
+                <div class="Slides">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="images/balint/acnagy2.png" style="width:100%">
+                </div>
+
+                <div class="Slides">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img_lights_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="Slides">
+                    <div class="numbertext">5 / 6</div>
+                    <img src="img_nature_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="Slides">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img_snow_wide.jpg" style="width:100%">
+                </div>
+
+                <div class="row">
+                    <div class="column">
+                        <img class="demo cursor" src="images/balint/acvideokep.png" style="width:100%"
+                            onclick="currentSlide(1)" alt="3.0 Release Trailer">
                     </div>
-                     <div class="about"> 
-                                <p>Last ratings: <a target="_blank" href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/#app_reviews_hash">Very positive</a></p>
-                                <p>All ratings: <a target="_blank" href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/#app_reviews_hash">Very positive</a></p>
-                                <p>Date of release: 2017. aug. 27.</p>
-                                <p><a target="_blank" href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">forrás</a></p>
-                     </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/balint/ackicsi1.png" style="width:100%"
+                            onclick="currentSlide(2)" alt="Nelson in PEI construction site">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="images/balint/acnagy2.png" style="width:100%"
+                            onclick="currentSlide(3)" alt="Mountains and fjords">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(4)"
+                            alt="Northern Lights">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(5)"
+                            alt="Nature and sunrise">
+                    </div>
+                    <div class="column">
+                        <img class="demo cursor" src="" style="width:100%" onclick="currentSlide(6)"
+                            alt="Snowy Mountains">
+                    </div>
                 </div>
             </div>
+            <div class="vflex">
+
+                <div class="rightcol">
+                    <img src="images/balint/ac.png" alt="header?">
+                    <div class="snippet">
+                        <p>
+                            Stranded on the shores of a mysterious island, you
+                            must learn to survive. Use skill & cunning to kill,
+                            breed, & ride the Dinosaurs.Developed by
+                            Studio Wildcard, Instinct Games
+                        </p>
+                    </div>
+                    <div class="about">
+                        <p>Last ratings: <a target="_blank"
+                                href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/#app_reviews_hash">Very
+                                positive</a></p>
+                        <p>All ratings: <a target="_blank"
+                                href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/#app_reviews_hash">Very
+                                positive</a></p>
+                        <p>Date of release: 2017. aug. 27.</p>
+                        <p><a target="_blank"
+                                href="https://store.steampowered.com/app/346110/ARK_Survival_Evolved/">forrás</a></p>
+                    </div>
+                </div>
             </div>
-        
+        </div>
+
         <div class="card2">
             <div class="coloumn">
-            <h1>About the game</h1>
-            <hr>
-                Use your cunning and resources to kill or tame & breed the leviathan dinosaurs and other primeval creatures roaming the land, and team up with or prey on hundreds of other players to survive, dominate... and escape! <br>
+                <h1>About the game</h1>
+                <hr>
+                Use your cunning and resources to kill or tame & breed the leviathan dinosaurs and other primeval
+                creatures roaming the land, and team up with or prey on hundreds of other players to survive,
+                dominate... and escape! <br>
                 <hr>
                 <img class="kepkozep" src="images/balint/TameTrainBreedRide.png" alt="gif"> <br>
                 <hr>
-                Dinosaurs, Creatures, & Breeding! -- over 100+ creatures can be tamed using a challenging capture-&-affinity process, involving weakening a feral creature to knock it unconscious, and then nursing it back to health with appropriate food. Once tamed, you can issue commands to your tames, which it may follow depending on how well you’ve tamed and trained it. Tames, which can continue to level-up and consume food, can also carry Inventory and Equipment such as Armor, carry prey back to your settlement depending on their strength, and larger tames can be ridden and directly controlled! <br>
+                Dinosaurs, Creatures, & Breeding! -- over 100+ creatures can be tamed using a challenging
+                capture-&-affinity process, involving weakening a feral creature to knock it unconscious, and then
+                nursing it back to health with appropriate food. Once tamed, you can issue commands to your tames, which
+                it may follow depending on how well you've tamed and trained it. Tames, which can continue to level-up
+                and consume food, can also carry Inventory and Equipment such as Armor, carry prey back to your
+                settlement depending on their strength, and larger tames can be ridden and directly controlled! <br>
                 <hr>
                 <img class="kepkozep" src="images/balint/FoodWaterTemp.png" alt="gif2">
             </div>
         </div>
     </div>
 </body>
+
 </html>

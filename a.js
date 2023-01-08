@@ -82,3 +82,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 } 
+
+while (true) {
+  let vid = document.getElementById("autoplayvid");
+  if (slideIndex != 1){
+   vid.pause()
+  } else {
+    vid.play()
+  }
+}
