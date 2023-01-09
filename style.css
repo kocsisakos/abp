@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: Arial, Helvetica, Verdana, sans-serif;
 }
 
 .show {
@@ -88,8 +89,7 @@
 
 }
 
-#dropdown-content1,
-#dropdown-content2 {
+#dropdown-content1, #dropdown-content2 {
     position: fixed;
     margin-top: -2px;
     background-color: #28528e;
@@ -102,8 +102,7 @@
     display: none;
 }
 
-#dropdown-content1 a,
-#dropdown-content2 a {
+#dropdown-content1 a, #dropdown-content2 a {
     float: none;
     color: white;
     padding: 12px 16px;
@@ -113,8 +112,7 @@
     z-index: 999;
 }
 
-.topnav a:hover,
-.dropdown:hover .dropbtn {
+.topnav a:hover, .dropdown:hover .dropbtn {
     background-color: #447cc9;
     color: white;
 }
@@ -124,9 +122,7 @@
     color: white;
 }
 
-
-#dropbtnbtn1,
-#dropbtnbtn2 {
+#dropbtnbtn1, #dropbtnbtn2 {
     height: 15px;
     background-color: #28528e;
     border-radius: 50%;
@@ -145,12 +141,29 @@ h1 {
 
 .r6bg {
     background-image: url(images/peter/r6hatter.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .arkbg {
     background-image: url(images/balint/arkhatterblur.png);
     background-repeat: no-repeat;
-    background-size: 150%;
+    background-size: 100%;
+    background-color: #0e1114;
+}
+
+.subbg {
+    background-image: url(images/balint/subhatterblur.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #141414;
+}
+
+.untbg {
+    background-image: url(images/akos/unturned/untbg.jpg);
+    background-repeat:no-repeat;
+    background-size: 100%;
+    background-color: #1b2838;
 }
 
 body {
@@ -175,10 +188,9 @@ a {
     margin-top: 20px;
 }
 
-.header,
-.card2, .card {
+.header, .card2, .card {
     background-color: rgb(0, 0, 0);
-    background-color: rgb(0, 0, 0, 0.7);
+    background-color: rgb(0, 0, 0, 0.5);
 }
 
 .rightcol img {
@@ -203,8 +215,7 @@ a {
 .card {
     display: flex;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    text-align: left;
     margin: auto;
     flex-direction: row;
     gap: 20px;
@@ -215,7 +226,7 @@ a {
 .vflex {
     display: flex;
     align-items: center;
-    text-align: center;
+    text-align: left;
     flex-direction: column;
     width: 324px;
 }
@@ -244,11 +255,7 @@ a {
 }
 
 .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
+    display: none;
 }
 
 .row {
@@ -282,4 +289,26 @@ a {
 
 .left {
     text-align: left;
+}
+
+.indexmaincard {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.leftswipe {
+    width: 20px;
+    height: 20px;
+    rotate: -90deg;
+}
+
+.rightswipe {
+    width: 20px;
+    height: 20px;
+    rotate: 90deg;
+}
+
+.center {
+    text-align: center;
 }
