@@ -12,60 +12,127 @@
 <body class="r6bg">
 
     <div class="topnav" id="topnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Főoldal</a>
         <div class="dropdown">
-            <p class="dropbtn" id="dropBtn">Jatekok<img class="rotate" onclick="toggleDrop()" id="dropbtnbtn" src="arrow.png" alt="Balfasz a js dev"></button>
-            <div id="dropdown-content" class="hide">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <p class="dropbtn" id="dropBtn1">Action - Shooter<img class="rotate" onclick="toggleDrop1()" id="dropbtnbtn1" src="arrow.png" alt="Balfasz a js dev"></p>
+            <div id="dropdown-content1" class="hide">
+                <a href="r6.html">R6</a>
+                <a href="mw2.html">MW2</a>
+                <a href="csgo.html">CS:GO</a>
+                <a href="syndicate.html">Syndicate</a>
             </div>
         </div>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsive()">&#9776;</a>
-    </div>
-
-  
-    <div class="header">
-        <h1>Tom Clancy's Rainbow Six® Siege</h1>
-        <hr>
-        <div class="leftcol">
-            <iframe width="600" height="337" src="https://www.youtube.com/embed/5Y8H2-uQgwY?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-            <div class="rightcol">
-                <img src="images/peter/header.png" alt="header?">
-                <div class="snippet"><br>
-                     Tom Clancy's Rainbow Six Siege is the latest <br>
-                    installment of the acclaimed first-person shooter <br> franchise developed by the renowned <br>
-                      Ubisoft Montreal studio.
-                 </div>
-                 <div class="about"> <br>
-
-                    Last ratings: <a target="_blank" href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/#app_reviews_hash">Very positive</a> <br>
-                    All ratings: <a target="_blank" href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/#app_reviews_hash">Very positive</a> <br>
-                    <br>
-                    Date of release: 2015. Dec. 1.
-                    <a target="_blank" href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege">source</a>
-                 </div>
+        <div class="dropdown">
+            <p class="dropbtn" id="dropBtn2">Survival<img class="rotate" onclick="toggleDrop2()" id="dropbtnbtn2" src="arrow.png" alt="Balfasz a js dev"></p>
+            <div id="dropdown-content2" class="hide">
+                <a href="unturned.html">Unturned</a>
+                <a href="subnautica.html">Subnautica</a>
+                <a href="ark.html">ARK</a>
             </div>
+        </div>
     </div>
-    <div class="below">
-            <h1>About the game</h1>
-            <hr>
-                <div class="coloumn">
-                    Master the art of destruction and gadgetry in Tom Clancy’s Rainbow Six Siege. Face intense close quarters combat, high lethality, tactical decision making, team play and explosive action within every moment. Experience a new era of fierce firefights and expert strategy born from the rich legacy of past Tom Clancy's Rainbow Six games. <br>
+        
+            <div class="main" id="content">
+                <div class="header">
+                    <h1>Tom Clancy's Rainbow Six® Siege</h1>
                     <hr>
-                    <img class="kepkozep" src="images/peter/r6gif1.gif" alt="gif"> <br>
-                    <hr>
-                    Engage in a brand-new style of assault using an unrivaled level of destruction and gadgetry.
-On defense, coordinate with your team to transform your environments into strongholds. Trap, fortify and create defensive systems to prevent being breached by the enemy.
-On attack, lead your team through narrow corridors, barricaded doorways and reinforced walls. Combine tactical maps, observation drones, rappelling and more to plan, attack and defuse every situation. <br>
-                <hr>
-                    <img class="kepkozep" src="images/peter/r6gif2.gif" alt="gif2">
                 </div>
-        </div>
+                <div class="card">
+                    <div class="container">
+                        <div class="Slides" style="display: block;">
+                            <div class="numbertext">1 / 6</div>
+                            <video id="autoplayvid" width="100%" height="auto" autoplay muted controls loop>
+                                <source src="images/peter/r6.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video> 
+                        </div>
+        
+                        <div class="Slides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="images/peter/r6_slide.jpg" style="width:100%">
+                        </div>
+        
+                        <div class="Slides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="images/peter/r6_slide2.jpg" style="width:100%">
+                        </div>
+        
+                        <div class="Slides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="images/peter/r6_slide3.jpg" style="width:100%">
+                        </div>
+        
+                        <div class="Slides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="images/peter/r6_slide4.jpg" style="width:100%">
+                        </div>
+        
+                        <div class="Slides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="images/peter/r6_slide5.jpg" style="width:100%">
+                        </div>
+        
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/r6_slide_video.jpg" style="width:100%" onclick="currentSlide(1)" alt="3.0 Release Trailer">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/r6_slide.jpg" style="width:100%" onclick="currentSlide(2)" alt="Nelson in PEI construction site">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/r6_slide2.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/r6_slide3.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/r6_slide4.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/r6_slide5.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vflex">
+                        <div class="rightcol">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/359550/header.jpg?t=1671482386" alt="header?">
+                        </div>
+                        <div>
+                            <p>
+                                Tom Clancy's Rainbow Six Siege is the latest installment of the acclaimed first-person shooter franchise developed by the renowned Ubisoft Montreal studio.
+                            </p>
+                            <p>Last ratings: <a target="_blank"
+                                href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/#app_reviews_hash">Very positive</a>
+                            </p>
+                            <p>All ratings: 
+                                <a target="_blank" href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege/#app_reviews_hash">Very positive</a>
+                            </p>
+                            <p>Date of release: 2015. Dec. 1.</p>
+                            <p>
+                                <a target="_blank" href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege">source</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2 left">
+                    <div class="coloumn">
+                        <h1>About the game</h1>
+                        <hr> <!--felsorolast meg kene csinalni-->
+                        Master the art of destruction and gadgetry in Tom Clancy’s Rainbow Six Siege. Face intense close quarters combat, high lethality, tactical decision making, team play and explosive action within every moment. Experience a new era of fierce firefights and expert strategy born from the rich legacy of past Tom Clancy's Rainbow Six games. 
+                        
 
+                        <img src="https://cdn.akamai.steamstatic.com/steam/apps/359550/extras/20637_R6S_STEAM_CLOSE_QUARTERS_GIF_-_Copy.gif.png?t=1671482386" alt="r6if"> <br>
+<br>
+
+                        Engage in a brand-new style of assault using an unrivaled level of destruction and gadgetry.
+On defense, coordinate with your team to transform your environments into strongholds. Trap, fortify and create defensive systems to prevent being breached by the enemy.
+On attack, lead your team through narrow corridors, barricaded doorways and reinforced walls. Combine tactical maps, observation drones, rappelling and more to plan, attack and defuse every situation.
+                    </div>
+                </div>
+            </div>
+        
+        </body>
+        
+        </html>
 </body>
 </html>
