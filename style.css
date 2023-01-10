@@ -5,7 +5,7 @@
 
 .show {
     display: block !important;
-    z-index: 1;
+    z-index: 999;
 }
 
 @keyframes rotate180 {from {transform: rotate(0);} to {transform: rotate(180deg);}}
@@ -123,31 +123,43 @@ h1 {
     text-align: center;
 }
 
-.r6bg {
-    background-image: url(images/peter/r6hatter.png);
+.r6bg,.arkbg, .subbg, .untbg, .mw2bg, .syndicatebg, .csgobg, .indexbg {
+    background-color: #1b2838;
     background-repeat: no-repeat;
     background-size: 100%;
+    background-position: center top;
+    min-width: 972px;
+}
+
+.r6bg {
+    background-image: url(images/peter/r6bg.jpg);
 }
 
 .arkbg {
-    background-image: url(images/balint/arkhatterblur.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: #0e1114;
+    background-image: url(images/balint/arkbg.jpg);
 }
 
 .subbg {
-    background-image: url(images/balint/subhatterblur.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: #141414;
+    background-image: url(images/balint/subbg.jpg);
 }
 
 .untbg {
     background-image: url(images/akos/unturned/untbg.jpg);
-    background-repeat:no-repeat;
-    background-size: 100%;
-    background-color: #1b2838;
+}
+.mw2bg {
+    background-image: url(images/peter/mw2bg.jpg);
+}
+
+.syndicatebg {
+    background-image: url(images/balint/syndicatebg.jpg);
+}
+
+.csgobg {
+    background-image: url(images/peter/csgobg.jpg);
+}
+
+.indexbg {
+    background-image: url(images/akos/index/index_bg.png);
 }
 
 body {
