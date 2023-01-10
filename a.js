@@ -68,6 +68,7 @@ function currentSlide(n) {
 function showSlides(n) {
   let i;
   let slides = document.getElementsByClassName("Slides");
+  let captionText = document.getElementById("caption");
   let small = document.getElementsByClassName("demo");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
@@ -75,6 +76,7 @@ function showSlides(n) {
   for (i = 0; i < small.length; i++) {small[i].className = small[i].className.replace(" active", "");}
   slides[slideIndex-1].style.display = "block";
   small[slideIndex-1].className += " active";
+  captionText.innerHTML = small[slideIndex-1].alt;
 } 
 
 while (true) {

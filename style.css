@@ -3,6 +3,10 @@
     font-family: Arial, Helvetica, Verdana, sans-serif;
 }
 
+.vflex div p {
+    padding: 7.5px;
+}
+
 .show {
     display: block !important;
     z-index: 999;
@@ -11,6 +15,17 @@
 @keyframes rotate180 {from {transform: rotate(0);} to {transform: rotate(180deg);}}
 
 @keyframes normal {from {transform: rotate(180deg);} to {transform: rotate(0);}}
+
+.text {
+    color: red;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
 
 .rotate {
     animation-name: "rotate180";
@@ -256,7 +271,15 @@ a {
 }
 
 .row {
+    margin: 0;
+    padding: 0;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+    white-space: nowrap;
     display: flex;
+    flex-wrap: nowrap;
     gap: 5px;
 }
 
@@ -268,7 +291,7 @@ a {
 
 .column {
     float: left;
-    width: 16.66%;
+    min-width: 16.66%;
 }
 
 .demo {
