@@ -9,64 +9,129 @@
     <script src="a.js"></script>
   
 </head>
-<body class="mw2bg">
+<body class="csgobg">
 
     <div class="topnav" id="topnav">
-        <a href="#home" class="active">Home</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
+        <a href="index.html">Főoldal</a>
         <div class="dropdown">
-            <p class="dropbtn" id="dropBtn">Jatekok<img class="rotate" onclick="toggleDrop()" id="dropbtnbtn" src="arrow.png" alt="Balfasz a js dev"></button>
-            <div id="dropdown-content" class="hide">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+            <p class="dropbtn" id="dropBtn1">Action - Shooter<img class="rotate" onclick="toggleDrop1()" id="dropbtnbtn1" src="arrow.png" alt="Balfasz a js dev"></p>
+            <div id="dropdown-content1" class="hide">
+                <a href="r6.html">R6</a>
+                <a href="mw2.html">MW2</a>
+                <a href="csgo.html">CS:GO</a>
+                <a href="syndicate.html">Syndicate</a>
             </div>
         </div>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="responsive()">&#9776;</a>
-    </div>
-
-  
-    <div class="header">
-        <h1>Tom Clancy's Rainbow Six® Siege</h1>
-        <hr>
-        <div class="leftcol">
-            <iframe width="600" height="337" src="https://www.youtube.com/embed/r72GP1PIZa0?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
-        </div>
-            <div class="rightcol">
-                <img src="images/peter/mw2jobbkep.png" alt="header?">
-                <div class="snippet"><br>
-                    Call of Duty®: Modern Warfare® II drops <br>
-                     players into an unprecedented global conflict <br>
-                      that features the return of the iconic Operators <br>
-                       of Task Force 141.
-                 </div>
-                 <div class="about"> <br>
-
-                    Last ratings: <a target="_blank" href="https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/#app_reviews_hash">Mixed</a> <br>
-                    All ratings: <a target="_blank" href="https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/#app_reviews_hash">Mixed</a> <br>
-                    <br>
-                    Date of release:  2022. oct. 28.
-                    <a target="_blank" href="https://store.steampowered.com/app/359550/Tom_Clancys_Rainbow_Six_Siege">source</a>
-                 </div>
+        <div class="dropdown">
+            <p class="dropbtn" id="dropBtn2">Survival<img class="rotate" onclick="toggleDrop2()" id="dropbtnbtn2" src="arrow.png" alt="Balfasz a js dev"></p>
+            <div id="dropdown-content2" class="hide">
+                <a href="unturned.html">Unturned</a>
+                <a href="subnautica.html">Subnautica</a>
+                <a href="ark.html">ARK</a>
             </div>
+        </div>
     </div>
-    <div class="below">
-            <h1>About the game</h1>
-            <hr>
-                <div class="coloumn">
-                    Master the art of destruction and gadgetry in Tom Clancy’s Rainbow Six Siege. Face intense close quarters combat, high lethality, tactical decision making, team play and explosive action within every moment. Experience a new era of fierce firefights and expert strategy born from the rich legacy of past Tom Clancy's Rainbow Six games. <br>
+        
+            <div class="main" id="content">
+                <div class="header">
+                    <h1>Call of Duty®: Modern Warfare® II
+                    </h1>
                     <hr>
-                    <img class="kepkozep" src="images/peter/r6gif1.gif" alt="gif"> <br>
-                    <hr>
-                    Engage in a brand-new style of assault using an unrivaled level of destruction and gadgetry.
-On defense, coordinate with your team to transform your environments into strongholds. Trap, fortify and create defensive systems to prevent being breached by the enemy.
-On attack, lead your team through narrow corridors, barricaded doorways and reinforced walls. Combine tactical maps, observation drones, rappelling and more to plan, attack and defuse every situation. <br>
-                <hr>
-                    <img class="kepkozep" src="images/peter/r6gif2.gif" alt="gif2">
                 </div>
-        </div>
+                <div class="card">
+                    <div class="container">
+                        <div class="Slides" style="display: block;">
+                            <div class="numbertext">1 / 6</div>
+                            <video id="autoplayvid" width="100%" height="auto" autoplay muted controls loop>
+                                <source src="images/peter/mw2.webm" type="video/webm">
+                                Your browser does not support the video tag.
+                            </video> 
+                        </div>
+        
+                        <div class="Slides">
+                            <div class="numbertext">2 / 6</div>
+                            <img src="images/peter/mw2_slide2.jpg" style="width:100%">
+                        </div>
+        
+                        <div class="Slides">
+                            <div class="numbertext">3 / 6</div>
+                            <img src="images/peter/mw2_slide3.jpg" style="width:100%">
+                        </div>
+        
+                        <div class="Slides">
+                            <div class="numbertext">4 / 6</div>
+                            <img src="images/peter/mw2_slide4.jpg" style="width:100%">
+                        </div>
+        
+                        <div class="Slides">
+                            <div class="numbertext">5 / 6</div>
+                            <img src="images/peter/mw2_slide5.jpg" style="width:100%">
+                        </div>
+        
+                        <div class="Slides">
+                            <div class="numbertext">6 / 6</div>
+                            <img src="images/peter/mw2_slide6.jpg" style="width:100%">
+                        </div>
+        
+                        <div class="row">
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/mw2_slide1.jpg" style="width:100%" onclick="currentSlide(1)" alt="3.0 Release Trailer">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/mw2_slide2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Nelson in PEI construction site">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/mw2_slide3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/mw2_slide4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/mw2_slide5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                            </div>
+                            <div class="column">
+                                <img class="demo cursor" src="images/peter/mw2_slide6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vflex">
+                        <div class="rightcol">
+                            <img src="https://cdn.akamai.steamstatic.com/steam/apps/1938090/header.jpg?t=1671472823" alt="header?">
+                        </div>
+                        <div>
+                            <p>
+                                Call of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141.
+                            </p>
+                            <p>Last ratings: <a target="_blank"
+                                href="https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/#app_reviews_hash">Mixed</a>
+                            </p>
+                            <p>All ratings: 
+                                <a target="_blank" href="https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/#app_reviews_hash">Mixed</a>
+                            </p>
+                            <p>Date of release: 2022.oct.28.</p>
+                            <p>
+                                <a target="_blank" href="https://store.steampowered.com/app/1938090/Call_of_Duty_Modern_Warfare_II/">source</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card2 left">
+                    <div class="coloumn">
+                        <h1>About the game</h1>
+                        <hr> <!--felsorolast meg kene csinalni-->
+                        Existing Modern Warfare® II Digital Standard Edition owners can upgrade to the Vault Edition as part of a limited time offer.
 
+                        Welcome to the new era of Call of Duty®.
+                        
+                        Call of Duty®: Modern Warfare® II drops players into an unprecedented global conflict that features the return of the iconic Operators of Task Force 141. From small-scale, high-stakes infiltration tactical ops to highly classified missions, players will deploy alongside friends in a truly immersive experience.
+                        
+                        Infinity Ward brings fans state-of-the-art gameplay, with all-new gun handling, advanced AI system, a new Gunsmith and a suite of other gameplay and graphical innovations that elevate the franchise to new heights.
+                    </div>
+                </div>
+            </div>
+        
+        </body>
+        
+        </html>
 </body>
 </html>
